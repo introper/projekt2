@@ -2,7 +2,7 @@
 <?php
 
     
-    $this->table->set_heading('Název', 'Zařátek války', 'Konec války', 'Počet mrtvých');
+    $this->table->set_heading('Název.', 'Zařátek války', 'Konec války', 'Počet mrtvých');
     foreach($data as $key => $row){
         $this->table->add_row(anchor('valky/bitvy/'.$row->id, $row->nazev), $row->datumZacatku, $row->datumKonce, $row->pocetMrtvych);
     }
